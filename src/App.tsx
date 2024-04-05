@@ -1,7 +1,10 @@
+import { Setup } from '@/components/setup'
+
 const App = () => {
     return (
         <div>
-            Hello World
+            <Setup />
+            <hr />
         </div>
     )
 }
