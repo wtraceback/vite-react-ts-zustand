@@ -8,6 +8,8 @@ const useStore = create<BearType>()((set) => {
         incrementBears: () => set((prevState) => ({ bears: prevState.bears + 1 })),
         // 重置 bears 的数量
         resetBears: () => set({ bears: 0 }),
+        // 让 bears 自减 step
+        decrementBearsByStep: (step = 1) => set((prevState) => ({ bears: prevState.bears - step }))
     }
 })
 

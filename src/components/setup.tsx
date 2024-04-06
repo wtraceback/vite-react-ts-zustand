@@ -18,11 +18,13 @@ export const Setup: FC = () => {
 
 const Test1: FC = () => {
     const incrementBears = useStore((state) => state.incrementBears)
+    const decrementBearsByStep = useStore((state) => state.decrementBearsByStep)
 
     return (
         <>
             <div>Test1 子组件</div>
             <button onClick={incrementBears}>bears + 1</button>
+            <button onClick={() => {decrementBearsByStep(5)}}>bears - 5</button>
         </>
     )
 }
