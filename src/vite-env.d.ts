@@ -1,5 +1,6 @@
 /// <reference types="vite/client" />
 
 type BearType = {
-    bears: number
+    bears: number,
+    incrementBears: () => void,
 }
