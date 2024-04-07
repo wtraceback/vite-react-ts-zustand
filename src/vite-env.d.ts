@@ -5,4 +5,5 @@ type BearType = {
     incrementBears: () => void,
     resetBears: () => void,
     decrementBearsByStep: (step?: number) => void,
+    asyncIncrementBears: () => void,
 }
