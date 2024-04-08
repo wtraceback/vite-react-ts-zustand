@@ -16,6 +16,13 @@ const useStore = create<BearType>()((set, get) => {
                 get().incrementBears()
             }, 1000)
         },
+
+        // 小鱼的数量
+        fishes: 0,
+        // 让小鱼数量自增+1的方法
+        incrementFishes: () => set((prevState) => ({ fishes: prevState.fishes + 1 })),
+        // 重置小鱼的数量
+        resetFishes: () => set({ fishes: 0 }),
     }
 })
 

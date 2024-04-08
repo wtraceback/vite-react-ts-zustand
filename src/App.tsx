@@ -1,9 +1,12 @@
-import { Setup } from '@/components/setup'
+import { Bears } from '@/components/Bears'
+import { Fishes } from '@/components/Fishes'
 
 const App = () => {
     return (
         <div>
-            <Setup />
+            <Bears />
+            <hr />
+            <Fishes />
         </div>
     )
 }
